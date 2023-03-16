@@ -32,15 +32,13 @@ const FavoriteAndPromo = () => {
         dispatch(getProducts())
     }, [dispatch])
 
-
-    const [keyword, setKeyword] = useState('')
-    const [refetch, setRefetch] = useState(false)
+ 
     const [dataProducts, setDataProducts] = useState([])
     useEffect(()=> {
-    axios.get(`http://localhost:5000/api/v1/products?search=${keyword}`)
+    axios.get(`https://coffeeshopbe.cyclic.app/api/v1/products`)
         .then((res) => setDataProducts(res.data.data))
         .catch((err)=> console.log(err))
-    }, [refetch, keyword])
+    }, [])
 
     // const [dataProducts, setDataProducts] = useState([])
 
