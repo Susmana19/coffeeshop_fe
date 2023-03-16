@@ -57,7 +57,7 @@ const FavoriteAndPromo = () => {
                 <div className="row row-cols-1  row-cols-4 g-1">
                     <div className="col my-3 w-100 d-flex flex-wrap gap-5 ms-3">
                     {/* List Product Start*/}
-                    {dataProducts.map((item)=> {
+                    {products.map((item)=> {
                         return(
                             <Link to={`/products/${item.id}`} className="d-flex flex-wrap" style={{textDecoration: 'none', color: 'black', fontStyle: 'normal'}}>
                                 <div key={item.id} className="card card-product rounded-5 border-0 shadow px-1 mx-2 fw-bold" style={{width: '10vw', fontFamily: 'Poppins'}}>
