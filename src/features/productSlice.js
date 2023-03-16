@@ -3,12 +3,12 @@ import axios from "axios";
 // import products from "../reducers/products";
 
 export const getProducts = createAsyncThunk("product/getProducts", async()=> {
-    const response = await axios.get('http://localhost:5000/api/v1/products')
+    const response = await axios.get('https://coffeeshopbe.cyclic.app/api/v1/products')
     return response.data.data
 })
 
 export const saveProducts = createAsyncThunk("product/saveProducts", async({name, price, image, category})=> {
-    const response = await axios.post('http://localhost:5000/api/v1/products', {
+    const response = await axios.post('https://coffeeshopbe.cyclic.app/api/v1/products', {
         name,
         price,
         image,
@@ -18,7 +18,7 @@ export const saveProducts = createAsyncThunk("product/saveProducts", async({name
 })
 
 export const updateProducts = createAsyncThunk("product/updateProducts", async({id, name, price, image, category})=> {
-    const response = await axios.patch(`http://localhost:5000/api/v1/products/${id}`, {
+    const response = await axios.patch(`https://coffeeshopbe.cyclic.app/api/v1/products/${id}`, {
         name,
         price,
         image,
@@ -28,7 +28,7 @@ export const updateProducts = createAsyncThunk("product/updateProducts", async({
 })
 
 export const deleteProducts = createAsyncThunk("product/deleteProducts", async(id)=> {
-    await axios.delete(`http://localhost:5000/api/v1/products/${id}`);
+    await axios.delete(`https://coffeeshopbe.cyclic.app/api/v1/products/${id}`);
     return id
 })
 
