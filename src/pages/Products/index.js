@@ -39,20 +39,12 @@ const Products = () => {
         .catch((err)=> console.log(err))
     }, [])
 
-    const [refetch, setRefetch] = useState(false)
-    const [keyword, setKeyword] = useState('')
 
-
-    useEffect(()=> {
-    axios.get(`http://localhost:5000/api/v1/products?search=${keyword}`)
-        .then((res) => setDataProducts(res.data.data))
-        .catch((err)=> console.log(err))
-    }, [refetch, keyword])
 
 
   return (
     <>
-        {localStorage.getItem('@userLogin') ? (<NavigationBar setIsLogin={setIsLogin} setKeyword={setKeyword}/>) : (<NavigationBarAuth/>)}  
+        {localStorage.getItem('@userLogin') ? (<NavigationBar setIsLogin={setIsLogin}/>) : (<NavigationBarAuth/>)}  
         <div className="d-flex" style={{borderTop: '1px solid #9F9F9F', marginTop: '15vh', minHeight: '180vh', width: '100vw'}}>
         {/* Promo Today  Start*/}
         <div className="left-side-product" style={{minHeight: '180vh'}}>
@@ -85,7 +77,7 @@ const Products = () => {
         justify
         >
             <Tab eventKey="fav-promo" title="Favorite & Promo">
-                <FavoriteAndPromo setIsLogin={setIsLogin} setKeyword={setKeyword} setRefetch={setRefetch} />
+                <FavoriteAndPromo setIsLogin={setIsLogin} />
             </Tab>
             <Tab eventKey="coffee" title="Coffee">
                 <Coffee/>
@@ -104,7 +96,6 @@ const Products = () => {
         </div>
         {/* List Product End */}
         </div>
-        <button className="btn btn-primary" onClick={()=> setRefetch(true)}>Refresh</button>
         <Footer/>
     </>
   )
