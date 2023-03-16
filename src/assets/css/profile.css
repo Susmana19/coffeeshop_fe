@@ -1,0 +1,15 @@
+.bg-user {
+    background-image: url(../images/bg-coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-profile {
+    margin-top: 15vh;
+}
+
+.left-side {
+    flex: 0.5;
+    height: 100vh;
+    border-right: none;
+}

@@ -1,0 +1,37 @@
+
+.left-side-product {
+    width: 35vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.rightside-product {
+    flex: 70%;
+    width: 50vw;
+    margin-top: 20vh;
+    padding-top: 10vh;
+}
+
+.price {
+    color: #6A4029;
+    font-weight: 700;
+    font-size: 17px
+}
+
+.btn-apply-coupon {
+    height: 15vh;
+    width: 30vw;
+    background: #6A4029;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-secondary:hover {
+    border: 2px solid  black;
+}

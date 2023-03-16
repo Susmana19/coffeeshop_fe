@@ -1,0 +1,11 @@
+footer {
+    padding-top: 10vh;
+    background-color: #F8F8F8;
+    font-family: 'Rubik', sans-serif;
+    color: #4F5665;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4F5665;
+}

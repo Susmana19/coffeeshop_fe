@@ -1,0 +1,7 @@
+.box-1 {
+    position: absolute;
+    z-index: 2;
+    top: 97vh;
+    left: 8vw;
+    font-family: 'Rubik', sans-serif;
+}

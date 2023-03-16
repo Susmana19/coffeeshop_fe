@@ -1,0 +1,7 @@
+.bg-body {
+    background-image: url(../images/bg-body.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 120vh;
+}
+

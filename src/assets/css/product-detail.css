@@ -1,0 +1,96 @@
+.hero {
+    margin-top: 10vh;
+    background-color: #EDEDED;
+}
+.breadcrumb {
+    margin-left: 3vw;
+}
+
+
+.left-side {
+    flex: 0.2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right-side {
+    flex: 0.8;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 400; */
+}
+
+.title-menu-hero {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 900; */
+    background: none;
+}
+
+.btn-secondary {
+    height: 75px;
+    width: 30vw;
+    background: #6A4029;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 2vw;
+}
+
+.btn-secondary:hover {
+    border: 2px solid  black;
+}
+
+.btn-fourth {
+    height: 90px;
+    width: 35vw;
+    background: #FFBA33;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-fourth:hover {
+    border: 2px solid  black;
+}
+
+.btn-fifth {
+    background-color: #FFBA33;
+    border:none;
+    border-radius: 20px;
+}
+
+.btn-active{
+    background-color: #6A4029;
+    color: #FFFF;
+    border: 1px solid #6A4029;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-small {
+    background-color: #F4F4F8;
+    color: #9F9F9F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-check-out {
+    background-color: #EDEDED;
+    position: absolute;
+    z-index: 2;
+    top: 159vh;
+}
+
+.footer-detail {
+    background-color: #EDEDED;
+    padding-top: 30vh;
+    margin-top: 0;
+}

@@ -1,0 +1,82 @@
+.login {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+.auth-bg {
+    background:  url("../images/bg-side.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+    display: flex;
+    flex: 0.5;
+    padding-left: 0;
+}
+
+.auth-form {
+    flex: 0.5;
+    align-items: flex-start;
+}
+
+.btn-prime {   
+    background-color: #FFBA33;
+    border: none;
+    height: 75px;
+    border-radius: 20px;
+    color: #6A4029;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-prime:hover{
+    border: 2px solid #6A4029;
+}
+
+.btn-secondary {
+    width: 85%;
+    height: 75px;
+    background: #6A4029;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-secondary:hover {
+    border: 2px solid  black;
+    color: #FFBA33;
+}
+
+.btn-tertiary {
+    background-color: #FFFF;
+    border: none;
+    border-radius: 20px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-tertiary:hover{
+    border: 2px solid #6A4029;
+}
+
+.form-label {
+    font-size: 20px; 
+    font-weight:700; 
+    color:#4F5665
+}
+
+.form-control {
+    height: 10vh;
+    font-family: 'Rubik', sans-serif;
+}

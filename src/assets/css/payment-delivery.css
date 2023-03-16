@@ -1,0 +1,56 @@
+.payment {
+    background-image: url('../images/bg-pay2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title {
+    margin-top: 20vh;
+}
+
+.payment-container {
+    gap: 10vw;
+}
+
+.left-side-payment {
+    background-color: white;
+    height: 130vh;
+    margin-bottom: 10vw;
+    margin-left: 5vw;
+    padding: 25px 15px;
+}
+
+.right-side {
+    margin-right: 10vw;
+    /* width: 10vw; */
+}
+
+.border-b {
+    border-bottom: 1px solid rgb(170, 159, 159);
+    padding: 5px 5px;
+}
+
+.form-check {
+    border-bottom: 1px solid rgb(170, 159, 159);
+    width: 31vw;
+
+}
+
+.btn-secondary {
+    width: 35vw;
+    height: 15vh;
+    background: #6A4029;
+    margin-left: 0;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn-secondary:hover {
+    border: 2px solid  black;
+}

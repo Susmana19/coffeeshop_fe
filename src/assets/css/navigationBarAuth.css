@@ -1,0 +1,27 @@
+/* NAVBAR START*/
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button-login {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background-color: #ffff;
+}
+
+.button-sign-up {
+    font-family: 'Rubik', sans-serif;
+    width: 14vw;
+    height: 8vh;
+    border-radius: 50px;
+    background-color: #FFBA33;
+    border: 0px solid #FFBA33;
+    color: #6A4029;
+    font-weight: bold;
+    margin-left: 20px
+}
