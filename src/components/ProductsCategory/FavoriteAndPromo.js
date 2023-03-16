@@ -61,8 +61,8 @@ const FavoriteAndPromo = () => {
                         return(
                             <Link to={`/products/${item.id}`} className="d-flex flex-wrap" style={{textDecoration: 'none', color: 'black', fontStyle: 'normal'}}>
                                 <div key={item.id} className="card card-product rounded-5 border-0 shadow px-1 mx-2 fw-bold" style={{width: '10vw', fontFamily: 'Poppins'}}>
-                                    <img src={`http://localhost:5000/uploads/images/${item.images[0
-                                ].filename}`} style={{width: '8vw', height: '18vh'}} className="card-img-top rounded-circle mx-auto" alt="..." />
+                                    <img src={`https://coffeeshopbe.cyclic.app/uploads/images/${item.images[0
+                                ].filename}`} style={{width: '8vw', height: '18vh'}} className="card-img-top rounded-circle mx-auto img-thumbnail" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title text-center fw-bolder title-menu h-75">{item.name}</h5>
                                         <h6 className="card-text text-center price">IDR {item.price}.000</h6>
