@@ -39,7 +39,7 @@ const Register = () => {
 
 
     axios({
-      url: 'http://localhost:5000/api/v1/auth/register',
+      url: 'https://coffeeshopbe.cyclic.app/api/v1/auth/register',
       method: "POST",
       data: registerForm
     }).then((res)=> {

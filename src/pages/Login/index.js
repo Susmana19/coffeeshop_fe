@@ -23,7 +23,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault()
     axios({
-      url: 'http://localhost:5000/api/v1/auth/login',
+      url: 'https://coffeeshopbe.cyclic.app/api/v1/auth/login',
       method: "POST",
       data: loginForm
     }).then((res)=> {
