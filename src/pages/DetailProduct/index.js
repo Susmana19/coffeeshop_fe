@@ -72,7 +72,7 @@ const [size, setSize] = useState(0);
             {dataImages.map((item)=> {
               if (item.id === id) {
                 return(                                
-                  <img src={`http://localhost:5000/uploads/images/${item.images[0].filename}`} className="card-img-top rounded-circle w-75 mx-auto" style={{height: '55vh'}} alt="..." ></img>
+                  <img src={`https://coffeeshopbe.cyclic.app/uploads/images/${item.images[0].filename}`} className="card-img-top rounded-circle w-75 mx-auto" style={{height: '55vh'}} alt="..." ></img>
                 )
               }})}    
 
@@ -130,7 +130,7 @@ const [size, setSize] = useState(0);
             {dataImages.map((item)=> {
               if (item.id === id) {
                 return(                 
-                    <img src={`http://localhost:5000/uploads/images/${item.images[0].filename}`} alt="" className="rounded-circle" style={{width: '25vw', height:'18vh'}} />
+                    <img src={`https://coffeeshopbe.cyclic.app/uploads/images/${item.images[0].filename}`} alt="" className="rounded-circle" style={{width: '25vw', height:'18vh'}} />
                 )
               }
             })} 
