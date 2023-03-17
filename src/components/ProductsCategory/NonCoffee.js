@@ -7,7 +7,7 @@ const NonCoffee = () => {
     const [dataProducts, setDataProducts] = useState([])
 
     useEffect(()=> {
-        axios.get('https://coffeeshopbe.cyclic.app/api/v1/products?cat=non-coffee')
+        axios.get('http://localhost:5000/api/v1/products?cat=non-coffee')
         .then((res) => setDataProducts(res.data.data))
         .catch((err)=> console.log(err))
     }, [])

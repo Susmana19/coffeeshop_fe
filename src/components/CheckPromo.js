@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/css/check-promo.css'
+import { Link } from 'react-router-dom'
 
 const CheckPromo = () => {
   return (
@@ -9,7 +10,7 @@ const CheckPromo = () => {
             <h1>Check our promo today!</h1>
             <p>Let's see the deals and pick yours!</p>
             </div>
-            <a href="./product-cust.html"> <button className="button-get-started mt-5">See Promo</button></a>
+            <Link to="/products"> <button className="button-get-started mt-5">See Promo</button></Link>
         </div>  
     </>
   )

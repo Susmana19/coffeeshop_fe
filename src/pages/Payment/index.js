@@ -15,6 +15,7 @@ import card from '../../assets/images/card.jpg'
 import bank from '../../assets/images/bank.jpg'
 import cod from '../../assets/images/deliv.jpg'
 import hazelnut_latte from '../../assets/images/image3.jpg'
+import creamy_latte from '../../assets/images/creamy-ice-latte.jpg'
 
 
 const Payment = () => {
@@ -39,22 +40,22 @@ const Payment = () => {
                         <h6 className="card-text m-0">x1</h6>
                         <h6 className="card-text m-0">Regular</h6>
                     </div>
-                    <h6>IDR 24.0</h6>
+                    <h6>IDR 25.0</h6>
                     </div>
                 </div>
                 </div>
                 <div className="card mb-2" style={{maxWidth: '40vw', border: 'none'}}>
                 <div className="row g-0">
                     <div className="col-md-4">
-                    <img src={hazelnut_latte} className="img-fluid rounded-4" alt="..." />
+                    <img src={creamy_latte} className="img-fluid rounded-4" alt="..." />
                     </div>
                     <div className="col-md-8 d-flex align-items-center">
                     <div className="card-body">
-                        <h5 className="card-text fw-bold m-0">Hezelnute Latte</h5>
+                        <h5 className="card-text fw-bold m-0">Creamy Ice Latte</h5>
                         <h6 className="card-text m-0">x1</h6>
                         <h6 className="card-text m-0">Regular</h6>
                     </div>
-                    <h6>IDR 24.0</h6>
+                    <h6>IDR 27.0</h6>
                     </div>
                 </div>
                 </div>
@@ -64,20 +65,20 @@ const Payment = () => {
                 {/* Bill  start*/}
                 <div className="rincian d-flex align-items-center justify-content-between">
                 <h5>SUBTOTAL</h5>
-                <h5>IDR 140.000</h5>
+                <h5>IDR 52.000</h5>
                 </div>
                 <div className="rincian d-flex align-items-center justify-content-between">
-                <h5>TAX &amp; FEES</h5>
-                <h5>IDR 140.000</h5>
+                <h5>TAX & FEES</h5>
+                <h5>IDR 10.000</h5>
                 </div>
                 <div className="rincian d-flex align-items-center justify-content-between">
                 <h5>SHIPPING</h5>
-                <h5>IDR 140.000</h5>
+                <h5>IDR 15.000</h5>
                 </div>
                 <br /><br />
                 <div className="total d-flex align-items-center justify-content-between">
                 <h2>TOTAL</h2>
-                <h2>IDR 140.000</h2>
+                <h2>IDR 87.000</h2>
                 </div>
                 {/* Bill  end*/}
             </section>

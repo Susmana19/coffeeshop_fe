@@ -8,8 +8,13 @@
     margin-top: 15vh;
 }
 
-.left-side {
-    flex: 0.5;
+.left-side-profile {
+    flex: 0.3;
     height: 100vh;
     border-right: none;
+}
+
+.right-side-profile {
+    flex: 0.7;
+    height: 100vh;
 }

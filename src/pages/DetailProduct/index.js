@@ -41,14 +41,14 @@ const DetailProduct = () => {
   
   const [dataProducts, setDataProducts] = useState([])
   useEffect(()=> {
-    axios.get(`https://coffeeshopbe.cyclic.app/api/v1/products/${id}`)
+    axios.get(`http://localhost:5000/api/v1/products/${id}`)
     .then((res) => setDataProducts(res.data.data))
     .catch((err)=> console.log(err))
     })
     
     const [dataImages, setDataImages] = useState([])
     useEffect(()=> {
-    axios.get(`https://coffeeshopbe.cyclic.app/api/v1/products/`)
+    axios.get(`http://localhost:5000/api/v1/products/`)
     .then((res) => setDataImages(res.data.data))
     .catch((err)=> console.log(err))
     })
@@ -72,7 +72,7 @@ const [size, setSize] = useState(0);
             {dataImages.map((item)=> {
               if (item.id === id) {
                 return(                                
-                  <img src={`https://coffeeshopbe.cyclic.app/uploads/images/${item.images[0].filename}`} className="card-img-top rounded-circle w-75 mx-auto" style={{height: '55vh'}} alt="..." ></img>
+                  <img src={`http://localhost:5000/uploads/images/${item.images[0].filename}`} className="card-img-top rounded-circle w-75 mx-auto" style={{height: '55vh'}} alt="..." ></img>
                 )
               }})}    
 
@@ -130,7 +130,7 @@ const [size, setSize] = useState(0);
             {dataImages.map((item)=> {
               if (item.id === id) {
                 return(                 
-                    <img src={`https://coffeeshopbe.cyclic.app/uploads/images/${item.images[0].filename}`} alt="" className="rounded-circle" style={{width: '25vw', height:'18vh'}} />
+                    <img src={`http://localhost:5000/uploads/images/${item.images[0].filename}`} alt="" className="rounded-circle" style={{width: '25vw', height:'18vh'}} />
                 )
               }
             })} 
