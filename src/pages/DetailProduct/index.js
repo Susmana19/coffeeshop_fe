@@ -41,14 +41,14 @@ const DetailProduct = () => {
   
   const [dataProducts, setDataProducts] = useState([])
   useEffect(()=> {
-    axios.get(`http://localhost:5000/api/v1/products/${id}`)
+    axios.get(`https://coffeeshopbe.cyclic.app/api/v1/products/${id}`)
     .then((res) => setDataProducts(res.data.data))
     .catch((err)=> console.log(err))
     })
     
     const [dataImages, setDataImages] = useState([])
     useEffect(()=> {
-    axios.get(`http://localhost:5000/api/v1/products/`)
+    axios.get(`https://coffeeshopbe.cyclic.app/api/v1/products/`)
     .then((res) => setDataImages(res.data.data))
     .catch((err)=> console.log(err))
     })
